@@ -7,23 +7,48 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Document</title>
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+    <title>Viktor Sopko</title>
   </head>
   <body>
     <header class="header">
-      <span id="header__tag">Full-Stack Developer</span>
-      <span class="header__item">HOME</span>
-      <span class="header__item">ABOUT</span>
-      <span class="header__item">SKILLS</span>
-      <span class="header__item">PROJECTS</span>
-      <span class="header__item">CONTACT</span>
-      <button id="header__button">Contact Me</button>
+      <div class="header__top">
+        <p class="header__tag">Full-Stack Developer</p>
+        <box-icon
+          onclick="showMenu()"
+          size="55px"
+          color="#C9ADA7"
+          name="menu-alt-left"
+          id="header__icon"
+        ></box-icon>
+
+        <ul id="navDesktop">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+
+        <button class="header__button">Contact me</button>
+      </div>
+      <div class="header__line" />
     </header>
-    <main class="hero"></main>
+    <nav id="nav">
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+    <main class="hero">hero</main>
+    <script src="./main.js"></script>
   </body>
 </html>
