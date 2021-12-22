@@ -12,21 +12,13 @@
     />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
     <title>Viktor Sopko</title>
   </head>
   <body>
     <header class="header">
       <div class="header__top">
         <p class="header__tag">Full-Stack Developer</p>
-        <box-icon
-          onclick="showMenu()"
-          size="55px"
-          color="#C9ADA7"
-          name="menu-alt-left"
-          id="header__icon"
-        ></box-icon>
-
+        <i onclick="showMenu()" class="fas fa-bars header__icon"></i>
         <ul id="navDesktop">
           <li><a href="#home">HOME</a></li>
           <li><a href="#about">ABOUT</a></li>
@@ -34,12 +26,21 @@
           <li><a href="#skills">SKILLS</a></li>
           <li><a href="#contact">CONTACT</a></li>
         </ul>
-
         <button class="header__button">Contact me</button>
       </div>
-      <div class="header__line" />
     </header>
     <nav id="nav">
+      <div class="nav__icon-container">
+        <a href="https://github.com/Viktrix8" target="_blank">
+          <i class="fab fa-github nav__icon"></i>
+        </a>
+        <a href="https://twitter.com/Viktrix_" target="_blank">
+          <i class="fab fa-twitter nav__icon"></i>
+        </a>
+        <a href="https://www.instagram.com/viktor_sopko_/" target="_blank">
+          <i class="fab fa-instagram nav__icon"></i>
+        </a>
+      </div>
       <ul>
         <li><a href="#home">HOME</a></li>
         <li><a href="#about">ABOUT</a></li>
@@ -48,7 +49,56 @@
         <li><a href="#contact">CONTACT</a></li>
       </ul>
     </nav>
-    <main class="hero">hero</main>
+    <div class="header__line"></div>
+    <main class="hero">
+      <div class="hero__image-container">
+        <img class="hero__image" src="./images//logo.svg" alt="" />
+      </div>
+      <div class="hero__text-container">
+        <h1 class="hero__heading">
+          Hi there
+          <br />
+          I'm <strong>Viktor Sopko</strong>
+        </h1>
+        <p class="hero__description">
+          I am software enginner with over 1 year of experience, and I am also a
+          full-stack developer and freelancer.
+        </p>
+        <div class="hero__actions">
+          <button><a href="#">Learn More</a></button>
+          <a href="#"><i class="fas fa-angle-down"></i></a>
+        </div>
+      </div>
+      <div class="hero__info-container">
+        <div class="hero__info">
+          <h3>15+</h3>
+          <p>Projects Done</p>
+        </div>
+        <div class="hero__info">
+          <h3>0</h3>
+          <p>Comapnies Worked With</p>
+        </div>
+        <div class="hero__info">
+          <h3>1+</h3>
+          <p>Years of Experience</p>
+        </div>
+      </div>
+      <div class="hero__socials">
+        <a href="https://github.com/Viktrix8" target="_blank">
+          <i class="fab fa-github nav__icon"></i>
+        </a>
+        <a href="https://twitter.com/Viktrix_" target="_blank">
+          <i class="fab fa-twitter nav__icon"></i>
+        </a>
+        <a href="https://www.instagram.com/viktor_sopko_/" target="_blank">
+          <i class="fab fa-instagram nav__icon"></i>
+        </a>
+      </div>
+    </main>
     <script src="./main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/7b9514e2ad.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
