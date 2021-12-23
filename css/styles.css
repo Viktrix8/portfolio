@@ -8,6 +8,7 @@
 * {
   margin: 0;
   padding: 0;
+  /* transition: all 0.5s ease; */
 }
 
 body {
@@ -16,6 +17,7 @@ body {
   background-color: var(--main-color);
   color: white;
   max-width: 100vw;
+  line-height: 1.5;
 }
 
 ul,
@@ -206,6 +208,7 @@ a {
   width: 272.55px;
   height: 68px;
   margin-right: 20px;
+  transition: all 0.5s ease;
 }
 
 .hero__actions i {
@@ -232,6 +235,20 @@ a {
 
 .hero__socials {
   display: none;
+}
+
+#about__text-more {
+  display: none;
+}
+
+.about__read-more {
+  width: 200px;
+  height: 50px;
+  font-size: 25px;
+  background-color: var(--secondary-color);
+  border: 0;
+  border-radius: 20px;
+  margin-top: 20px;
 }
 
 /* Hero Media Query for Desktops */
@@ -306,5 +323,68 @@ a {
 
   .hero__socials a {
     margin-right: 50px;
+  }
+}
+
+/* About Page */
+#about {
+  margin-top: 8rem;
+  text-align: center;
+}
+
+.about__main {
+  display: grid;
+}
+
+.about__heading {
+  font-size: 65px;
+  color: var(--secondary-color);
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+
+.about__text {
+  margin-top: 2.5rem;
+}
+
+.about__text-heading {
+  font-size: 35px;
+}
+
+.about__text-description {
+  font-size: 25px;
+}
+
+.about__image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+/* Media Queries => About Page for Desktop */
+@media screen and (min-width: 1062px) {
+  .about__main {
+    margin-top: 50px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 3rem;
+    position: relative;
+  }
+
+  .about__text-heading {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .about__text-description {
+    /* margin-top: 20px; */
+    font-size: 20px;
+  }
+
+  .about__image-container img {
+    margin-top: 50px;
   }
 }

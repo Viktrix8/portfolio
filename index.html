@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Viktor Sopko</title>
@@ -65,7 +66,7 @@
           full-stack developer and freelancer.
         </p>
         <div class="hero__actions">
-          <button><a href="#">Learn More</a></button>
+          <button><a href="#about">Learn More</a></button>
           <a href="#"><i class="fas fa-angle-down"></i></a>
         </div>
       </div>
@@ -95,10 +96,49 @@
         </a>
       </div>
     </main>
+    <main id="about">
+      <h2 class="about__heading">About Me</h2>
+      <div class="about__main">
+        <div class="about__text">
+          <h3 class="about__text-heading">How it all started</h3>
+          <p class="about__text-description">
+            My name is Viktor Sopko. I am a Software Engineer with more than one
+            year of experience. My journey started about three years ago when I
+            bought a book that teaches how to create a Website from scratch
+            using HTML & CSS.
+          </p>
+          <p id="about__text-more" class="about__text-description">
+            When I first started to read it I didn't care why it is like that
+            and so on... I just wanted to have my first website created and that
+            was dumb. When I created my first website I didn't know anything
+            about programming because I didn't care why is this written like
+            that (well HTML and CSS aren't programming languages but I thought
+            they are at that time) but I had my first Website, and it was an
+            amazing feeling. About a year later I bought another book but this
+            time it teaches how to create a game using javascript, but this time
+            I tried to understand why is this written like that. When I read the
+            book I had my first game created. About a year ago I bought my first
+            course that teaches how to program in python. That was the first
+            time I took programming seriously and started learning how to
+            program.
+          </p>
+          <button class="about__read-more" onclick="showMore()">
+            Read More
+          </button>
+        </div>
+        <div class="about__image-container">
+          <img src="./images/james-harrison-vpOeXr5wmR4-unsplash.jpg" alt="" />
+        </div>
+      </div>
+    </main>
     <script src="./main.js"></script>
     <script
       src="https://kit.fontawesome.com/7b9514e2ad.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      ScrollReveal().reveal("#main", { delay: 500 });
+      ScrollReveal().reveal("#about", { delay: 500 });
+    </script>
   </body>
 </html>
