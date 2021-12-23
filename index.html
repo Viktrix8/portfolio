@@ -16,7 +16,7 @@
     <title>Viktor Sopko</title>
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="header__top">
         <p class="header__tag">Viktor Sopko</p>
         <i onclick="showMenu()" class="fas fa-bars header__icon"></i>
@@ -96,18 +96,18 @@
         </a>
       </div>
     </main>
-    <main id="about">
-      <h2 class="about__heading">About Me</h2>
+    <div id="about">
+      <h2 class="about__heading page-heading">About Me</h2>
       <div class="about__main">
         <div class="about__text">
-          <h3 class="about__text-heading">How it all started</h3>
-          <p class="about__text-description">
+          <h3 class="text-heading">How it all started</h3>
+          <p class="text-description">
             My name is Viktor Sopko. I am a Software Engineer with more than one
             year of experience. My journey started about three years ago when I
             bought a book that teaches how to create a Website from scratch
             using HTML & CSS.
           </p>
-          <p id="about__text-more" class="about__text-description">
+          <p id="about__text-more" class="text-description">
             When I first started to read it I didn't care why it is like that
             and so on... I just wanted to have my first website created and that
             was dumb. When I created my first website I didn't know anything
@@ -120,7 +120,8 @@
             book I had my first game created. About a year ago I bought my first
             course that teaches how to program in python. That was the first
             time I took programming seriously and started learning how to
-            program.
+            program.After that I learnt many skills like Javascript in depth,
+            React Js and Node js.
           </p>
           <button class="about__read-more" onclick="showMore()">
             Read More
@@ -130,7 +131,55 @@
           <img src="./images/james-harrison-vpOeXr5wmR4-unsplash.jpg" alt="" />
         </div>
       </div>
-    </main>
+    </div> -->
+    <div id="skills">
+      <h2 class="about__heading page-heading">My Skills</h2>
+      <div class="skills__grid">
+        <div class="skills">
+          <h3 class="text-heading skills__text-heading">
+            My Proffesional skills
+          </h3>
+          <p class="text-description">
+            This are one of my most used and best skills I have.
+          </p>
+          <div class="skills__table">
+            <div class="table__item">
+              <i class="fab fa-python table__item-icon"></i>
+              <p class="table__item-skill">PYTHON</p>
+              <p class="table__item-percentage">20%</p>
+              <span class="table__item-line python-line"></span>
+            </div>
+            <div class="table__item">
+              <i class="fab fa-js table__item-icon"></i>
+              <p class="table__item-skill">JAVASCRIPT</p>
+              <p class="table__item-percentage">75%</p>
+              <span class="table__item-line js-line"></span>
+            </div>
+            <div class="table__item">
+              <i class="fab fa-react table__item-icon"></i>
+              <p class="table__item-skill">REACT JS</p>
+              <p class="table__item-percentage">90%</p>
+              <span class="table__item-line react-line"></span>
+            </div>
+            <div class="table__item">
+              <i class="fab fa-react table__item-icon"></i>
+              <p class="table__item-skill">REACT NATIVE</p>
+              <p class="table__item-percentage">70%</p>
+              <span class="table__item-line rn-line"></span>
+            </div>
+            <div class="table__item">
+              <i class="fab fa-node table__item-icon"></i>
+              <p class="table__item-skill">NODE JS</p>
+              <p class="table__item-percentage">80%</p>
+              <span class="table__item-line node-line"></span>
+            </div>
+          </div>
+        </div>
+        <div class="skills__image">
+          <img src="./images/james-harrison-vpOeXr5wmR4-unsplash.jpg" alt="" />
+        </div>
+      </div>
+    </div>
     <script src="./main.js"></script>
     <script
       src="https://kit.fontawesome.com/7b9514e2ad.js"
